@@ -1,0 +1,200 @@
+/* ---------- Reset & base ---------- */
+/* Browsers add their own default margins/padding — this clears that out
+   so spacing on the page is only what we set on purpose. */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #faf9f6;
+  color: #111111; /* true black can feel harsh at body-text size; this is close to black but easier to read */
+  font-family: Georgia, "Times New Roman", serif; /* a real serif, not a decoration — gives white/black some character */
+  line-height: 1.6;
+}
+
+/* .wrap centers content and keeps line length readable.
+   Reused inside the header, each section, and the footer. */
+.wrap {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ---------- Header / nav ---------- */
+.site-header {
+  border-bottom: 1px solid #111111;
+  padding: 24px 0;
+}
+
+.site-header .wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-name {
+  font-weight: bold;
+  font-size: 1.1rem;
+  letter-spacing: 0.02em;
+  color: #111111;
+  text-decoration: none;
+}
+
+.site-header nav a {
+  color: #111111;
+  text-decoration: none;
+  margin-left: 24px;
+  font-size: 0.95rem;
+  border-bottom: 1px solid transparent;
+}
+
+.site-header nav a:hover,
+.site-header nav a:focus-visible {
+  border-bottom: 1px solid #111111;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  padding: 64px 0 0;
+  text-align: center;
+}
+
+.hero-image-row {
+  background: #111111;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  margin-left: -50vw;
+}
+
+.hero-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+}
+
+/* ---------- Sections ---------- */
+.section {
+  padding: 64px 0;
+}
+
+#why-blog {
+  border-bottom: 1px solid #111111;
+}
+
+.section h1 {
+  font-size: 1.75rem;
+  margin-bottom: 24px;
+}
+
+.arrow-link {
+  display: block;
+  color: #111111;
+  font-size: 1.5rem;
+  text-decoration: none;
+  margin-top: 16px;
+  transition: transform 0.15s ease;
+}
+
+.arrow-link:hover,
+.arrow-link:focus-visible {
+  transform: translateX(6px);
+}
+
+.section p {
+  max-width: 60ch; /* keeps paragraphs from stretching too wide to read comfortably */
+}
+
+#about p + p {
+  margin-top: 20px;
+}
+
+.headshot {
+  display: block;
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  margin: 0 auto 32px;
+}
+
+.drop-cap::first-letter {
+  float: left;
+  font-size: 3.6rem;
+  line-height: 0.8;
+  font-weight: bold;
+  padding-right: 10px;
+  padding-top: 6px;
+}
+
+.teaser {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ---------- Blog posts ---------- */
+.post + .post {
+  margin-top: 40px;
+}
+
+.post h2 {
+  font-size: 1.2rem;
+  margin-bottom: 4px;
+}
+
+.post h2 a {
+  color: #111111;
+  text-decoration: none;
+}
+
+.post h2 a:hover,
+.post h2 a:focus-visible {
+  text-decoration: underline;
+}
+
+.post-meta {
+  font-size: 0.85rem;
+  color: #555555;
+  margin-bottom: 8px;
+}
+
+/* ---------- Footer / contact ---------- */
+.site-footer {
+  background: #111111;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.contact-btn {
+  display: inline-block;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 28px;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+}
+
+.contact-btn:hover,
+.contact-btn:focus-visible {
+  background: #ffffff;
+  color: #111111;
+}
+
+/* ---------- Small screens ---------- */
+@media (max-width: 480px) {
+  .site-header .wrap {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .site-header nav a {
+    margin-left: 0;
+    margin-right: 16px;
+  }
+}
