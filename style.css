@@ -38,7 +38,7 @@ body {
   font-weight: bold;
   font-size: 1.1rem;
   letter-spacing: 0.02em;
-  color: #111111;
+  color: #CD1C18;
   text-decoration: none;
 }
 
@@ -89,6 +89,7 @@ body {
 .section h1 {
   font-size: 1.75rem;
   margin-bottom: 24px;
+  color: #CD1C18;
 }
 
 .arrow-link {
@@ -149,7 +150,7 @@ body {
 }
 
 .post h2 a {
-  color: #111111;
+  color: #CD1C18;
   text-decoration: none;
 }
 
