@@ -43,7 +43,8 @@ body {
 }
 
 .site-header nav a {
-  color: #111111;
+  color: #2B1A15;
+  font-weight: 300;
   text-decoration: none;
   margin-left: 24px;
   font-size: 0.95rem;
@@ -52,7 +53,7 @@ body {
 
 .site-header nav a:hover,
 .site-header nav a:focus-visible {
-  border-bottom: 1px solid #111111;
+  border-bottom: 1px solid #2B1A15;
 }
 
 /* ---------- Hero ---------- */
