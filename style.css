@@ -9,8 +9,8 @@
 
 body {
   background: #FFE4C4;
-  color: #111111; /* true black can feel harsh at body-text size; this is close to black but easier to read */
-  font-family: Georgia, "Times New Roman", serif; /* a real serif, not a decoration — gives white/black some character */
+  color: #2B1A15;
+  font-family: Helvetica, Arial, sans-serif;
   line-height: 1.6;
 }
 
