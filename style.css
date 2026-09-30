@@ -61,7 +61,7 @@ body {
 .hero {
   position: relative;
   overflow: hidden;
-  padding: 96px 0 140px;
+  padding: 110px 0 72px;
   text-align: center;
 }
 
@@ -78,37 +78,37 @@ body {
 }
 
 .topping.pepperoni {
-  width: 34px;
-  height: 34px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   background: radial-gradient(circle at 35% 35%, #d9543a, #a32a1c);
 }
 
 .topping.cheese {
-  width: 30px;
-  height: 22px;
+  width: 18px;
+  height: 13px;
   background: #f2b705;
   border-radius: 40% 60% 60% 40% / 60% 40% 60% 40%;
 }
 
 .topping.olive {
-  width: 14px;
-  height: 14px;
+  width: 9px;
+  height: 9px;
   border-radius: 50%;
   background: transparent;
-  border: 4px solid #3b2b25;
+  border: 3px solid #3b2b25;
 }
 
 .topping.basil {
-  width: 26px;
-  height: 13px;
+  width: 16px;
+  height: 8px;
   border-radius: 50%;
   background: #4f7942;
 }
 
 @keyframes float-topping {
   0%, 100% { transform: translateY(0) rotate(0deg); }
-  50% { transform: translateY(-16px) rotate(8deg); }
+  50% { transform: translateY(-8px) rotate(8deg); }
 }
 
 @media (prefers-reduced-motion: reduce) {
