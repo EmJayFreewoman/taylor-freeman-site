@@ -164,7 +164,7 @@ body {
   max-width: 60ch; /* keeps paragraphs from stretching too wide to read comfortably */
 }
 
-#about p + p {
+.section p + p {
   margin-top: 20px;
 }
 
