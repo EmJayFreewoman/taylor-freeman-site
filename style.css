@@ -63,6 +63,7 @@ body {
   overflow: hidden;
   padding: 110px 0 72px;
   text-align: center;
+  border-bottom: 1px solid #111111;
 }
 
 .pizza-toppings {
