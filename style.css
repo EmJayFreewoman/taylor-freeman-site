@@ -59,23 +59,80 @@ body {
 
 /* ---------- Hero ---------- */
 .hero {
-  padding: 64px 0 0;
+  position: relative;
+  overflow: hidden;
+  background: #111111;
+  padding: 96px 0;
   text-align: center;
 }
 
-.hero-image-row {
-  background: #111111;
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  margin-left: -50vw;
+.pizza-toppings {
+  position: absolute;
+  inset: 0;
 }
 
-.hero-image {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  display: block;
+.topping {
+  position: absolute;
+  animation-name: float-topping;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.topping.pepperoni {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #d9543a, #a32a1c);
+}
+
+.topping.cheese {
+  width: 30px;
+  height: 22px;
+  background: #f2b705;
+  border-radius: 40% 60% 60% 40% / 60% 40% 60% 40%;
+}
+
+.topping.olive {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: transparent;
+  border: 4px solid #3b2b25;
+}
+
+.topping.basil {
+  width: 26px;
+  height: 13px;
+  border-radius: 50%;
+  background: #4f7942;
+}
+
+@keyframes float-topping {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-16px) rotate(8deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .topping {
+    animation: none;
+  }
+}
+
+.hero-content {
+  position: relative;
+  max-width: 480px;
+}
+
+.hero-tagline {
+  color: #fdf6ec;
+  font-size: 1.75rem;
+  font-weight: bold;
+  line-height: 1.3;
+  margin-bottom: 16px;
+}
+
+.hero-subtext {
+  color: #d8c4b4;
 }
 
 /* ---------- Sections ---------- */
