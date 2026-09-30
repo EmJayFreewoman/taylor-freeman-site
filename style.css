@@ -142,6 +142,10 @@ body {
   color: #CD1C18;
 }
 
+#blog h1 {
+  color: #2B1A15;
+}
+
 .arrow-link {
   display: block;
   color: #111111;
